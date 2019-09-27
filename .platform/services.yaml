@@ -1,0 +1,10 @@
+# The services of the project.
+#
+# Each service listed will be deployed to power your project.
+
+db:
+    type: oracle-mysql:5.7
+    disk: 1024
+search:
+    type: elasticsearch:6.5
+    disk: 512
