@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "akeneo/pim-community-dev",
-            "version": "v4.0.42",
+            "version": "v4.0.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/akeneo/pim-community-dev.git",
-                "reference": "13446e6768f8d1ba28d3a7091d85fe4959c500c0"
+                "reference": "f9113e6f42c50d7879ddc41fdd9d0e2c501ba033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/13446e6768f8d1ba28d3a7091d85fe4959c500c0",
-                "reference": "13446e6768f8d1ba28d3a7091d85fe4959c500c0",
+                "url": "https://api.github.com/repos/akeneo/pim-community-dev/zipball/f9113e6f42c50d7879ddc41fdd9d0e2c501ba033",
+                "reference": "f9113e6f42c50d7879ddc41fdd9d0e2c501ba033",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +172,7 @@
                 }
             ],
             "description": "Akeneo PIM, the future of catalog management is open!",
-            "time": "2020-07-22T12:26:43+00:00"
+            "time": "2020-07-31T14:07:03+00:00"
         },
         {
             "name": "ass/xmlsecurity",
@@ -2485,16 +2485,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.69",
+            "version": "1.0.70",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "7106f78428a344bc4f643c233a94e48795f10967"
+                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
-                "reference": "7106f78428a344bc4f643c233a94e48795f10967",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/585824702f534f8d3cf7fab7225e8466cc4b7493",
+                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493",
                 "shasum": ""
             },
             "require": {
@@ -2505,7 +2505,7 @@
                 "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
-                "phpspec/phpspec": "^3.4",
+                "phpspec/phpspec": "^3.4 || ^4.0 || ^5.0 || ^6.0",
                 "phpunit/phpunit": "^5.7.26"
             },
             "suggest": {
@@ -2565,7 +2565,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-05-18T15:13:39+00:00"
+            "time": "2020-07-26T07:20:36+00:00"
         },
         {
             "name": "league/flysystem-ziparchive",
