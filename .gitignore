@@ -44,3 +44,9 @@ coverage/*
 ###< symfony/web-server-bundle ###
 
 .env
+
+# Ignore mounts
+var
+installer
+web
+upgrades
