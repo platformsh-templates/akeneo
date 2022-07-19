@@ -22,24 +22,26 @@ security:
             security:                       false
             anonymous:                      true
 
-        liip_imagine:
-            pattern:                        ^/media
-            security:                       false
-
         login:
             pattern:                        ^/user/(login|reset-request|send-email|check-email)$
             provider:                       chain_provider
             anonymous:                      true
-            logout_on_user_change:          true
 
         reset_password:
             pattern:                        ^/user/reset/*
             provider:                       chain_provider
             anonymous:                      true
-            logout_on_user_change:          true
 
         oauth_token:
             pattern:                        ^/api/oauth/v1/token
+            security:                       false
+
+        oauth2_token:
+            pattern:                        ^/connect/apps/v1/oauth2/token
+            security:                       false
+
+        openid_public_key:
+            pattern:                        ^/connect/apps/v1/openid/public-key
             security:                       false
 
         api_index:
@@ -67,8 +69,8 @@ security:
                 secret:                     "%env(APP_SECRET)%"
                 name:                       BAPRM
                 lifetime:                   1209600   # stay logged for two weeks
+                samesite:                   'strict'
             anonymous:                      false
-            logout_on_user_change:          true
 
     access_control:
         - { path: ^/admin/, role: ROLE_ADMIN }
