@@ -1,6 +1,6 @@
 {
-  "name": "akeneo/pim-community-standard",
-  "description": "The \"Akeneo Community Standard Edition\" distribution",
+  "name": "platformsh/pim-community-standard",
+  "description": "Akeneo PIM Community Standard Edition for deployment on Platform.sh",
   "license": "OSL-3.0",
   "type": "project",
   "authors": [
@@ -21,32 +21,29 @@
     ]
   },
   "require": {
-    "akeneo/pim-community-dev": "^4.0.0",
-    "ocramius/package-versions": "1.5.1",
+    "akeneo/pim-community-dev": "^6.0.0",
     "platformsh/config-reader": "^2.4"
   },
   "require-dev": {
-    "doctrine/doctrine-migrations-bundle": "1.3.2",
-    "symfony/debug-bundle": "^4.4.7",
-    "symfony/web-profiler-bundle": "^4.4.7",
-    "symfony/web-server-bundle": "^4.4.7",
-    "psr/cache": "^1.0"
+    "symfony/debug-bundle": "^5.4.0",
+    "symfony/web-profiler-bundle": "^5.4.0"
   },
   "scripts": {
     "post-update-cmd": [
-      "bash vendor/akeneo/pim-community-dev/std-build/install-required-files.sh"
+      "vendor/akeneo/pim-community-dev/std-build/install-required-files.sh"
     ],
     "post-install-cmd": [
-      "bash vendor/akeneo/pim-community-dev/std-build/install-required-files.sh"
+      "vendor/akeneo/pim-community-dev/std-build/install-required-files.sh"
     ],
     "post-create-project-cmd": [
-      "bash vendor/akeneo/pim-community-dev/std-build/install-required-files.sh"
+      "vendor/akeneo/pim-community-dev/std-build/install-required-files.sh"
     ]
   },
   "minimum-stability": "stable",
   "config": {
-    "platform": {
-      "php": "7.3"
+    "allow-plugins": {
+      "symfony/flex": true,
+      "composer/installers": true
     }
   }
 }
