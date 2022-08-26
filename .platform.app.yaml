@@ -50,16 +50,16 @@ hooks:
         export PATH=$N_PREFIX/bin:$PATH
         curl -fsS https://raw.githubusercontent.com/platformsh/snippets/main/src/install_node.sh | { bash /dev/fd/3 -v $NODE_VERSION -y; } 3<&0
 
-        echo "Installing Node dependencies"
+        echo "Installing Node dependencies."
         PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1 corepack yarn install
         PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1 corepack yarn packages:build
 
-        echo "Installing assets"
+        echo "Installing assets."
         php bin/console pim:installer:assets --symlink --clean -vvv
         corepack yarn run less
         corepack yarn update-extensions
 
-        echo "Running webpack"
+        echo "Running webpack."
         corepack yarn run webpack
 
     # We run the deploy hook after your application has been deployed and started.
