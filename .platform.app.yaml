@@ -4,7 +4,7 @@
 name: akeneo
 
 # The language and version to use to run the application.
-type: php:8.0
+type: php:8.1
 
 dependencies:
     php:
@@ -30,7 +30,7 @@ variables:
         AKENEO_STARTER: minimal
         # AKENEO_STARTER: icecat_demo_dev
         # Update these for your desired Node version.
-        NODE_VERSION: v14.19.0
+        NODE_VERSION: v18.12.0 # LTS version
     php:
         apc.enable_cli: 1
 
@@ -177,7 +177,7 @@ workers:
         disk: 512
         commands:
             start: |
-                php /app/bin/console akeneo:batch:job-queue-consumer-daemon
+                php /app/bin/console messenger:consume ui_job import_export_job data_maintenance_job --env=prod
 
 source:
   operations:
