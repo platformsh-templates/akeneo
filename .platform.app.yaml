@@ -30,7 +30,7 @@ variables:
         AKENEO_STARTER: minimal
         # AKENEO_STARTER: icecat_demo_dev
         # Update these for your desired Node version.
-        NODE_VERSION: v18.12.0 # LTS version
+        NODE_VERSION: v18.16.1 # LTS version
     php:
         apc.enable_cli: 1
 
