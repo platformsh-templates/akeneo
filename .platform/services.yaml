@@ -10,4 +10,4 @@ search:
     disk: 512
 jobs:
     type: network-storage:1.0
-    disk: 128
+    disk: 1024

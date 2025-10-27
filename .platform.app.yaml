@@ -174,7 +174,7 @@ crons:
 
 workers:
     queue:
-        disk: 512
+        disk: 1024
         commands:
             start: |
                 php /app/bin/console akeneo:batch:job-queue-consumer-daemon
