@@ -21,7 +21,7 @@
     ]
   },
   "require": {
-    "akeneo/pim-community-dev": "^6.0.0",
+    "akeneo/pim-community-dev": "^7.0.0",
     "platformsh/config-reader": "^2.4"
   },
   "require-dev": {
