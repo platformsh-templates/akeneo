@@ -1,10 +1,11 @@
-# Akeneo PIM Community Edition for Platform.sh
+> [!WARNING]
+> **This repository is no longer maintained by our internal teams.**  
+> The template is provided *as is* and will not receive updates, bug fixes, or new features.  
+> You are welcome to contribute on it or fork the repository and modify it for your own use.
+> To deploy this template on [Upsun](https://www.upsun.com), you can use the command [upsun project:convert](https://docs.upsun.com/administration/cli/reference.html#projectconvert)
+> on this codebase to convert the existing `.platform.app.yaml` configuration file to the [Upsun Flex format](https://docs.upsun.com/create-apps/app-reference/single-runtime-image.html).
 
-<p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/akeneo/.platform.template.yaml&utm_content=akeneo&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-    <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
-</a>
-</p>
+# Akeneo PIM Community Edition for Platform.sh
 
 This template builds the Akeneo PIM system for Platform.sh.  By default it uses the "minimal" install profile.  It requires at least a Medium plan as it uses a Worker instance for queue processing.
 
@@ -18,17 +19,7 @@ Akeneo is a Product Information Management (PIM) tool, which acts as a central s
 
 ## Deploy
 
-The quickest way to deploy this template on Platform.sh is by clicking the button below. 
-This will automatically create a new project and initialize the repository for you.
-
-<p align="center">
-    <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/akeneo/.platform.template.yaml&utm_content=akeneo&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
-    </a>
-</p>
-<br/>
-
-You can also quickly recreate this project locally with the following command:
+You can quickly recreate this project locally with the following command:
 
 ```bash
 composer create-project platformsh/pim-community-standard -s dev
